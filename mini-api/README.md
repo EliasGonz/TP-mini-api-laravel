@@ -54,7 +54,7 @@ Normaliza los datos y los mapea a:
   "name": "Jane",
   "suraname": "Doe",
   "birthday": "1995/05/20/",
-  "age": 29,
+  "age": 30,
   "documentType": "DNI",
   "documentNumber": 12345678
 }
