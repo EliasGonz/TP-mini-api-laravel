@@ -19,7 +19,7 @@ class ReclutaController extends Controller
             return response()->json([
                 'status' => 'error', 
                 'details' => 'no se pudo acceder a la lista de reclutas'
-            ], 500);
+            ], $response->status());
         }
 
         return response()->json([
@@ -79,7 +79,7 @@ class ReclutaController extends Controller
             return response()->json([
                 'status' => 'error',
                 'details' => 'error al enviar los datos del recluta a Firebase'
-            ], 500);
+            ], $responseToPost->status());
         }
 
         return response()->json(
