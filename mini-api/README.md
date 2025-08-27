@@ -33,7 +33,7 @@ Mini-API desarrollada en **Laravel** que consume y expone datos de reclutas de m
 
 ### 1. GET Api/reclutados
 
-Consume el recurso de Firebase: https://reclutamiento-dev-procontacto-default-rtdb.firebaseio.com/reclutier.json y devuelve la información en un formato legible para humanos.
+Consume el recurso de Firebase: https://reclutamiento-dev-procontacto-default-rtdb.firebaseio.com/reclutier.json y devuelve la información en un formato JSON.
 
 ### 2. POST Api/recluta 
 
