@@ -67,7 +67,7 @@ Valida o Normaliza los datos de la siguiente manera:
   - Valida que documentType sea solo CUIT o DNI.
   - Agrega una '/' al final en birthday (YYYY/MM/DD/).
 
-Las request invalidas devuelve codigo de estado 400 con mensaje de error.
+Las request invalidas devuelve codigo de estado 400 (Bad Request) con mensaje de error.
 
 Finalmente, se envía el objeto a Firebase: https://reclutamiento-dev-procontacto-default-rtdb.firebaseio.com/reclutier.json
 
