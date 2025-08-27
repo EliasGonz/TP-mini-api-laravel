@@ -43,8 +43,8 @@ class ReclutaController extends Controller
         }
 
         $validator = Validator::make($request->all(), [
-            'name'           => 'required|string',
-            'suraname'       => 'required|string',
+            'name'           => 'required|string|min:1|max:30|regex:/^[\p{L}\s\'\-]+$/u',
+            'suraname'       => 'required|string|min:1|max:30|regex:/^[\p{L}\s\'\-]+$/u',
             'birthday'       => 'required|date_format:Y/m/d|after_or_equal:1900/01/01|before_or_equal:today',
             'documentType'   => 'required|in:CUIT,DNI',
             'documentNumber' => 'required|numeric',
